@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1>Employee Management System</h1>
+        <nav>
+          <a href="addEmployee.html">Add New Employee</a>
+          <a href="#">Delete Employee</a>
+          <a href="#">Update Employee</a>
+        </nav>
+      </header>
+      <div id="employee-data">
+        <ul id="paginated-list" aria-live="polite"></ul>
+      </div>
+      <nav class="pagination-container">
+        <button
+          class="pagination-button"
+          id="prev-button"
+          title="Previous page"
+          aria-label="Previous page"
+        >
+          &lt;
+        </button>
+
+        <div id="pagination-numbers"></div>
+
+        <button
+          class="pagination-button"
+          id="next-button"
+          title="Next page"
+          aria-label="Next page"
+        >
+          &gt;
+        </button>
+      </nav>
+    </div>
+    <script src="script.js" />
+  </body>
+</html>
